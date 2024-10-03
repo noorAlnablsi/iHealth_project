@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:ihealth_app/pages/home_page.dart';
-import 'package:ihealth_app/pages/on_boarding_screen_1.dart';
+import 'package:ihealth_app/core/recource/color.dart';
+
+import 'package:ihealth_app/pages/splash_and_pageview/pageview.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
@@ -15,12 +16,12 @@ class _SplashPageState extends State<SplashPage> {
    void initState() {
 
     super.initState();
-    Future.delayed(const Duration(seconds: 2), () {
+    Future.delayed(const Duration(seconds: 1), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
           builder: (context) {
-            return const OnBoardingScreen1();
+            return  Core();
           },
         ),
       );
@@ -46,7 +47,8 @@ class _SplashPageState extends State<SplashPage> {
               style: TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.w400,
-                  color: Color.fromARGB(255, 144, 143, 143)),
+                  color: grey),
+                
             )
           ],
         ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ihealth_app/pages/splash_page.dart';
+import 'package:ihealth_app/pages/splash_and_pageview/splash_page.dart';
 
 void main() {
   runApp(const MyApp());
